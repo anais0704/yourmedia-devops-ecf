@@ -41,6 +41,6 @@ Ouvre l’application avec :
 
 ---
 
-## Liens
+# Activité Type 2 - Exercice 4
 
-- [Dépôt GitHub principal](https://github.com/<ton-utilisateur>/yourmedia-devops-ecf)
+![CI React Native](https://github.com/anais0704/yourmedia-devops-ecf/actions/workflows/ci.yml/badge.svg)
