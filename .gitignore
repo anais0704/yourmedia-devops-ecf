@@ -3,13 +3,42 @@ target/
 *.class
 *.log
 
-# IDE
+# React Native / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+app-example/
+
+# Native (iOS / Android / mobile secrets)
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.kotlin/
+*.orig.*
+
+# Metro bundler
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Env files
+.env*.local
+
+# IDEs
 .idea/
 .vscode/
 *.iml
 
-# MacOS
+# OS files
 .DS_Store
-
-# OS/Linux
-Thumbs.db.DS_Store
+Thumbs.db
