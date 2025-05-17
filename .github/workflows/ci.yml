@@ -1,0 +1,31 @@
+name: CI React Native
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v3
+
+    - name: Installation de Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Installer les dépendances
+      run: npm install
+      working-directory: mobile
+
+    - name: Linter le code 
+      run: npm run lint || echo "lint échoué mais pas bloquant"
+      working-directory: mobile
+
+    - name: Build test
+      run: echo "Aucun build nécessaire pour app Expo Hello World"
